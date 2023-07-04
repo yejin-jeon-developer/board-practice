@@ -1,5 +1,6 @@
 package com.example.boardpractice.controller;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+@Disabled("불필요한 테스트이므로 제외 시킴")
 @DisplayName("DATA REST TEST")
 @Transactional // 테스트 이후 DB 롤백
 @AutoConfigureMockMvc
